@@ -28,6 +28,7 @@ POSTGRES_PASSWORD=password
 POSTGRES_DB=postgres_db
 POSTGRES_HOST=postgres
 POSTGRES_PORT=5432
+```
 
 
 ### 3. Запуск системы
