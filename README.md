@@ -36,7 +36,9 @@ POSTGRES_PORT=5432
 ```bash
 # Запуск сервиса
 docker compose up -d
-
+# Создание и применение миграций
+docker compose exec app alembic revision --autogenerate -m "Create migrations"
+docker compose exec app alembic upgrade head
 # Просмотр логов
 docker compose logs -f
 
