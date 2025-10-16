@@ -21,8 +21,8 @@ cd cadastrals
 
 ```bash
 # PostgreSQL настройки
-DATABASE_URL="подключение к postgres через asyncpg"
-DATABASE_URL_ALEMBIC="подключение к postgres через psycopg2 для миграций alembic"
+DATABASE_URL="postgresql+asyncpg://user:password@postgres:5432/postgres_db"
+DATABASE_URL_ALEMBIC="postgresql+psycopg2://user:password@postgres:5432/postgres_db"
 POSTGRES_USER=user
 POSTGRES_PASSWORD=password
 POSTGRES_DB=postgres_db
